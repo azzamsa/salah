@@ -7,7 +7,9 @@
 /// Setting for the Asr prayer time. 
 /// For Hanafi madhab, the Asr is bit later 
 /// than that of the Shafi madhab.
-#[derive(PartialEq, Debug, Copy, Clone)]
+use serde::Deserialize;
+
+#[derive(PartialEq, Debug, Copy, Clone, Deserialize)]
 pub enum Madhab {
     Shafi = 1,
     Hanafi = 2,
